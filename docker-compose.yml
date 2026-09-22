@@ -8,7 +8,7 @@ services:
         # Read from UPSTREAM_VERSION file: UPSTREAM_VERSION=$(cat UPSTREAM_VERSION) docker compose build
         UPSTREAM_VERSION: ${UPSTREAM_VERSION:-v0.11.3}
     environment:
-      - WEBUI_ROOT_PATH=/openwebui
+      - WEBUI_ROOT_PATH=/ai-rag
       - ENABLE_PERSISTENT_CONFIG=False
       - WEBUI_AUTH=false
       - OPENAI_API_BASE_URL=https://ollama.com/v1
